@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    text-decoration: none;
+}
+
+header {
+    background-color: #006a9b;
+}
+
+body {
+    font-family: "Press Start 2P", system-ui;
+    background-color: rgb(24, 24, 24);
+    color: #ffffff;
+}
