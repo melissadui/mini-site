@@ -3,14 +3,88 @@
     padding: 0;
 
     text-decoration: none;
-}
-
-header {
-    background-color: #006a9b;
+    list-style: none;
 }
 
 body {
-    font-family: "Press Start 2P", system-ui;
-    background-color: rgb(24, 24, 24);
+    font-family: "Spectral", serif;
+    background-color: #181818;
     color: #ffffff;
+
+    height: 2000px;
+}
+
+
+header {
+    background-color: #006a9b;
+    height: 60px;
+
+    position: sticky;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    flex-direction: row;
+    height: 60px;
+
+    padding: 0 10px;
+}
+
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+}
+
+section a {
+    color: #009ee7;
+}
+
+a {
+    color: #e4fff6;
+}
+
+h2 {
+    text-align: left;
+}
+
+img {
+    border-radius: 50%;
+    width: 30%;
+    margin: auto;
+    display: block;
+}
+
+footer {
+    text-align: center;
+    margin: 20px;
+}
+
+/* section p { 
+    text-align: justify;
+    padding: 10px 0px;
+} */
+
+ul {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+
+
+/* SOBRE MIM */
+
+#main-sobre-mim {
+    display: flex;
+    flex-direction: column;
 }
