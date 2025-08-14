@@ -4,6 +4,8 @@
 
     text-decoration: none;
     list-style: none;
+
+    box-sizing: content-box;
 }
 
 body {
@@ -31,23 +33,26 @@ header {
     align-items: center;
 
     flex-direction: row;
-    height: 60px;
 
-    padding: 0 10px;
+
 }
 
 
 .container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 10px;
+    margin: 0 auto;
+
+    /* background-color: red; */
+}
+
+.just-flex {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
-    max-width: 1200px;
 }
 
-section a {
-    color: #009ee7;
-}
 
 a {
     color: #e4fff6;
@@ -61,8 +66,9 @@ img {
     border-radius: 50%;
     width: 30%;
     margin: auto;
-    display: block;
 }
+
+
 
 footer {
     text-align: center;
@@ -77,14 +83,61 @@ footer {
 ul {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     gap: 10px;
 }
 
 
+li {
+   padding: 5px 10px;
+    border: 2px solid transparent;
+   
+}
 
-/* SOBRE MIM */
+li:hover {
+    background-color: #449ac2;
+    border-radius: 5px 15px;
+}
 
-#main-sobre-mim {
-    display: flex;
-    flex-direction: column;
+
+footer img { 
+    width: 30px;
+}
+
+
+.main section {
+    background-color: #242424 ;
+    margin-top: 10px;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid transparent;
+}
+
+section h2 {
+    margin-bottom: 16px;
+    font-size: 2rem;
+}
+
+section p {
+    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+
+section a {
+    background-color: #009ee7;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 500;
+    width: 100%;
+    display: inline-block;
+    margin-top: 10px;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 6px;
+}
+
+section a:hover {
+    background-color: #36bfff;
 }
