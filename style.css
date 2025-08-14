@@ -141,3 +141,15 @@ section a {
 section a:hover {
     background-color: #36bfff;
 }
+
+
+input {
+    width: 100%;
+    background-color: #afe6ff;
+}
+
+
+form button:hover {
+    /* background-color: #00aeff; */
+    background-color: #449ac2;
+}
