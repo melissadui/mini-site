@@ -13,13 +13,21 @@ body {
     background-color: #181818;
     color: #ffffff;
 
-    height: 2000px;
+    display: flex;
+    flex-direction: column;
+
+    height: 100vh;
+}
+
+main {
+    flex: 1;
+    padding: 30px;
 }
 
 
 header {
     background-color: #006a9b;
-    height: 60px;
+    padding: 10px;
 
     position: sticky;
     top: 0;
@@ -32,27 +40,19 @@ header {
     justify-content: space-between;
     align-items: center;
 
-    flex-direction: row;
+
 
 
 }
 
 
-.container {
-    width: 100%;
-    max-width: 1200px;
-    padding: 0 10px;
-    margin: 0 auto;
-
-    /* background-color: red; */
+header nav i {
+    display: none;
 }
 
-.just-flex {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.fa-solid {
+    display: none;
 }
-
 
 a {
     color: #e4fff6;
@@ -64,11 +64,14 @@ h2 {
 
 img {
     border-radius: 50%;
-    width: 30%;
+    width: 100%;
     margin: auto;
 }
 
-
+.image {
+    margin: auto;
+    width: 30%;
+}
 
 footer {
     text-align: center;
@@ -117,7 +120,8 @@ footer img {
 
 section h2 {
     margin-bottom: 16px;
-    font-size: 2rem;
+    /* 1 = 16px */
+    font-size: 1rem;
 }
 
 section p {
@@ -162,3 +166,27 @@ a, li{
     
     transition: all 300ms ease;
 }
+
+/* @media screen and (max-width: 1000px) {
+    body {
+        background-color: red;
+    }
+} */
+
+/* responsivo teste para ver se eu lembrava */
+/* @media screen and (max-width: 400px) {
+    .habilidade h2 {
+        background-color: #449ac2;
+    }
+} */
+
+@media screen and (max-width: 470px) {
+    ul {
+        display: none;
+    }
+
+    .fa-solid {
+    display: flex;
+}
+}
+
