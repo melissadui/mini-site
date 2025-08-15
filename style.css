@@ -96,6 +96,8 @@ li {
 
 li:hover {
     background-color: #449ac2;
+
+    /* se não quiser a transição (transition na linha 163) das bordas, colo que o border-radius no elemento li anterior (acima desse li:hover)*/
     border-radius: 5px 15px;
 }
 
@@ -152,4 +154,11 @@ input {
 form button:hover {
     /* background-color: #00aeff; */
     background-color: #449ac2;
+}
+
+
+a, li{
+    /* transition: background-color 400ms ease, color 500ms ease-in, text 300ms ease-in-out; */
+    
+    transition: all 300ms ease;
 }
