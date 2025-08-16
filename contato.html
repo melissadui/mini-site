@@ -13,8 +13,10 @@
         href="https://fonts.googleapis.com/css2?family=Play&family=Press+Start+2P&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
         rel="stylesheet">
 
-        
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
     <link rel="stylesheet" href="style.css">
@@ -52,25 +54,30 @@
 
             <section>
                 <h2>Entre em contato</h2>
-                <form action="">
-                    <fieldset>
-                        <legend></legend>
+                <form method="post" action="">
+
+                    <div>
+
                         <label for="nome">Nome</label>
-                        <input type="text" name="nome" id="nome">
-                        
+                        <input type="text" name="nome" id="nome" placeholder="Digite seu nome completo">
+    
                         <br>
-
+    
                         <label for="email">Email</label>
-                        <input type="email" name="email" id="email">
-                        
+                        <input type="email" name="email" id="email" placeholder="exemplo@exemplo.com" required>
+    
                         <br>
-
+    
                         <label for="mensagem">Mensagem</label>
-                        <input type="text" id="mensagem" name="mensagem">
+                        <input type="text" id="mensagem" name="mensagem" placeholder="Digite sua mensagem aqui">
+                    </div>
 
-                        <button>Enviar</button>
 
-                    </fieldset>
+
+
+                    <button><strong>Enviar</strong></button>
+
+
                 </form>
             </section>
         </div>
@@ -79,7 +86,8 @@
 
     <footer class="container">
         <p>Todos os direitos reservados.</p>
-        <a href="https://github.com/melissadui" target="_blank"><img src="assets/img/github-icon.png" alt="Icone do github"></a>
+        <a href="https://github.com/melissadui" target="_blank"><img src="assets/img/github-icon.png"
+                alt="Icone do github"></a>
         <a href="https://www.linkedin.com/in/melissa-duilio/" target="_blank"><img src="assets/img/linkedin-icon.png"
                 alt="Icone do linkedin"></a>
     </footer>
