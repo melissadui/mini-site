@@ -195,8 +195,8 @@ background: linear-gradient(90deg, rgba(25, 105, 179, 1) 0%, rgba(47, 224, 109, 
 
 form button:hover {
     /* background-color: #00aeff; */
-background: #090979;
 background: linear-gradient(90deg, rgba(9, 9, 121, 1) 0%, rgba(9, 9, 121, 1) 50%);
+
 }
 
 
@@ -227,5 +227,49 @@ li {
 
     .fa-solid {
         display: flex;
+    }
+}
+
+.banana {
+    height: 100px;
+    width: 100px;
+    background-color: #009ee7;
+    border-radius: 0.5rem;
+    animation-name: animacao-entrada;
+    animation-duration: 4s;
+    /* animation-delay: 5s; */
+    position: relative;
+    animation-iteration-count: infinite;
+    /* animation-direction: reverse; */
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes animacao-entrada {
+    /* from: 0% */
+    0% {
+        background-color: #009ee7;
+        left: 0;
+        top: 0;
+    }
+    
+    15% {
+        background-color: aquamarine
+        ;
+        left: 200px;
+        top: 200px;
+    }
+
+    40% {
+        background-color: rgb(201, 143, 255);
+        left: 90px;
+        top: 200px;
+    }
+
+    /* to: 100% */
+    100% {
+        background-color: cadetblue;
+        left: 80px;
+        top: 50px;
     }
 }
